@@ -5,6 +5,27 @@ public class StudentModel {
     private int age;
     private boolean isActive;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public StudentModel(String name, int age, boolean isActive, int id) {
+        this.name = name;
+        this.age = age;
+        this.isActive = isActive;
+        this.id = id;
+    }
+
+    public StudentModel(int id) {
+        this.id = id;
+    }
+
+    private int id;
+
     public String getName() {
         return name;
     }
